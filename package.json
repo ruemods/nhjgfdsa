@@ -1,0 +1,70 @@
+{
+  "name": "Aswin-MD",
+  "description": "Multi Device Whatsapp Bot By Aswin Sparky",
+  "version": "2.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+   "start": "node index.js"
+  },
+  "keywords": [
+   "termux",
+   "whatsapp",
+   "2021",
+   "wabase-md",
+   "base",
+   "baileys-md",
+   "bot",
+   "bot-md",
+   "multi-device"
+  ],
+  "author": "ASWIN SPARKY",
+  "license": "GPL-3.0",
+  "dependencies": {
+   "@sampandey001/baileys": "latest",
+   "@adiwajshing/keyed-db": "^0.2.4",
+   "@neeraj-x0/textpro": "^1.0.3",
+   "awesome-phonenumber": "^3.4.0",
+   "bitly": "^7.1.2",
+   "browser-id3-writer": "^4.4.0",
+   "crypto-js": "^4.1.1",
+   "dotenv": "^16.0.0",
+   "file-type": "^16.5.3",
+   "fluent-ffmpeg": "^2.1.2",
+   "g-i-s": "^2.1.6",
+   "got": "^11.8.2",
+   "heroku-client": "^3.1.0",
+   "jimp": "^0.16.1",
+   "jsdom": "^20.0.0",
+   "node-cron": "^3.0.2",
+   "node-webpmux": "^3.1.0",
+   "pastebin-js": "^1.0.6",
+   "x-asena": "^1.0.1",
+   "pg": "^8.8.0",
+   "raganork-bot": "^3.0.1",
+   "pino": "^8.1.0",
+   "pm2": "^5.2.0",
+   "qrcode": "^1.5.1",
+   "qrcode-reader": "^1.0.4",
+   "scraper-x0": "^1.0.6",
+   "sequelize": "^6.23.0",
+   "sharp": "^0.30.7",
+   "simple-git": "^3.14.1",
+   "sqlite3": "^5.1.1",
+   "supervisor": "^0.12.0",
+   "express": "latest",
+   "aes256":"1.1.0"
+     },
+ "directories": {
+  "lib": "lib",
+  "src": "src"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/Sparkymon777/Aswin-MD.git"
+ },
+ "bugs": {
+  "url": "https://github.com/Sparkymon777/Aswin-MD/issues"
+ },
+ "homepage": "https://github.com/Sparkymon777/Aswin-MD#readme"
+}
