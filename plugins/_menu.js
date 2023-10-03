@@ -2,6 +2,8 @@ const events = require("../lib/event");
 const { command, isPrivate, tiny, serif_B, clockString } = require("../lib");
 const { OWNER_NAME, BOT_NAME } = require("../config");
 const { hostname, uptime } = require("os");
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
 command(
   {
     pattern: "menu",
@@ -23,7 +25,7 @@ Description : ${i.desc}\`\`\``
       let [date, time] = new Date()
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
-      let menu = `╭━━━━━[ ${BOT_NAME} ]━━━
+      let menu = `╭━━━━━[ ${BOT_NAME} ]━━━𖥘
 ┃ ➺ *OWNER* :  ${OWNER_NAME}
 ┃ ➺ *PREFIX* : ${prefix}
 ┃ ➺ *HOST NAME* :${hostname().split("-")[0]}
@@ -31,7 +33,7 @@ Description : ${i.desc}\`\`\``
 ┃ ➺ *TIME* : ${time}
 ┃ ➺ *COMMANDS* : ${events.commands.length} 
 ┃ ➺ *UPTIME* : ${clockString(uptime())} 
-╰━━━━━━━━━━━━━━━
+╰━━━━━━━━━━━━━━━𖥘 ${readMore}
 ╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼\n╽`;
       let cmnd = [];
       let cmd;
@@ -65,12 +67,12 @@ Description : ${i.desc}\`\`\``
 ┃  ┌┤`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }, num) => {
-          menu += `\n┃  │ ⛥  ${cmd.trim()}`;
+          menu += `\n┃  │ ▢  ${cmd.trim()}`;
         });
         menu += `\n┃  ╰─────────────𖥘`;
       });
 
-      menu += ` ╰━━━━━━━━━━━──⊷\n`;
+      menu += ` ╰━━━━━━━━━━━──𖥘\n`;
       return await message.client.sendMessage(message.jid, {
         image: { url: `https://i.imgur.com/3cMVKBk.jpeg` },
         caption: menu,
