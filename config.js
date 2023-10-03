@@ -13,10 +13,7 @@ module.exports = {
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   SESSION_ID: process.env.SESSION_ID || "",
   LANG: process.env.LANG || "EN",
-  HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "null"
-      ? "^"
-      : "^[!]",
+  HANDLERS: process.env.HANDLER === "false" || ".",
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "master",
   PACKNAME: process.env.PACKNAME || "Aswin-MD",
@@ -24,6 +21,14 @@ module.exports = {
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
   AUTHOR: process.env.AUTHOR || "Aswin Sparky",
   DATABASE_URL: DATABASE_URL,
+  SUDO: process.env.SUDO || "917012984396,8156984396",
+  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
+  OWNER_NAME: process.env.OWNER_NAME || "Aswin Sparky",
+  BOT_NAME: process.env.BOT_NAME || "Aswin-MD",
+  WORK_TYPE: process.env.WORK_TYPE || "public",
+  //---------------------------------------------
+  //Database
   DATABASE:
     DATABASE_URL === "./lib/database.db"
       ? new Sequelize({
@@ -41,10 +46,4 @@ module.exports = {
           },
           logging: false,
         }),
-  SUDO: process.env.SUDO || "917012984396,8156984396",
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
-  OWNER_NAME: process.env.OWNER_NAME || "Aswin Sparky",
-  BOT_NAME: process.env.BOT_NAME || "Aswin-MD",
-  WORK_TYPE: process.env.WORK_TYPE || "public",
 };
