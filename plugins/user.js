@@ -126,12 +126,12 @@ command(
     type: "Owner",
   },
   async (message, match, client) => {
-      
+      let jid = match?.trim()||message.jid;
 
       let media = await client.quoted.download()
       let buffer = media
       
-message.client.sendMessage(message.jid, { audio: buffer,
+message.client.sendMessage(jid, { audio: buffer,
 			waveform: Array.from({length: 30}, () => Math.floor(Math.random() * 100)),ptt:true,mimetype:"audio/mpeg"
     })
   }
