@@ -102,3 +102,37 @@ command(
     }
   }
 );
+
+
+//sperky
+command(
+  {
+    pattern: "gs",
+    fromMe: true,
+    desc: "Get Anyone's WhatsApp status",
+    type: "Owner",
+  },
+  async (message, match, client) => {
+let a = await client.quoted.download()
+let mm = await require('file-type').fromBuffer(a)
+return await message.client.sendMessage(message.jid, {[mm.mime.split('/')[0]]:a});
+  }
+);
+command(
+  {
+    pattern: "wave",
+    fromMe: true,
+    desc: "wave maker",
+    type: "Owner",
+  },
+  async (message, match, client) => {
+      
+
+      let media = await client.quoted.download()
+      let buffer = media
+      
+message.client.sendMessage(message.jid, { audio: buffer,
+			waveform: Array.from({length: 30}, () => Math.floor(Math.random() * 100)),ptt:true,mimetype:"audio/mpeg"
+    })
+  }
+);
