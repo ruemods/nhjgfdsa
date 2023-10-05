@@ -40,6 +40,10 @@ const app = express();
 
 const port = process.env.PORT || 8000;
 
+const store = makeInMemoryStore({
+  logger: pino().child({ level: "silent", stream: "store" }),
+});
+
 //session id connect
 
 var CryptoJS = require("crypto-js");
