@@ -76,7 +76,8 @@
     "js-base64":"^3.7.5",
     "openai":"^3.2.1",
    "express": "latest",
-   "aes256":"1.1.0"
+   "aes256":"1.1.0",
+   "yt-search": "^2.10.4"
      },
  "directories": {
   "lib": "lib",
