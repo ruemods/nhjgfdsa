@@ -30,8 +30,6 @@ const { PluginDB } = require("./lib/database/plugins");
 
 const Greetings = require("./lib/Greetings");
 
-const { MakeSession } = require("./lib/session");
-
 const { async } = require("q");
 
 const { decodeJid } = require("./lib");
