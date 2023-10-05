@@ -22,7 +22,7 @@
   "author": "ASWIN SPARKY",
   "license": "GPL-3.0",
   "dependencies": {
-   "@sampandey001/baileys": "latest",
+   "@whiskeysockets/baileys": "latest",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@neeraj-x0/textpro": "^1.0.3",
     "awesome-phonenumber": "^3.4.0",
