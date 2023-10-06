@@ -2,7 +2,7 @@ const { command } = require("../lib");
 
 command(
   {
-    pattern: "pp",
+    pattern: "setpp",
     fromMe: true,
     desc: "Set profile picture",
     type: "user",
