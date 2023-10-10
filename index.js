@@ -8,7 +8,7 @@ const {
 
   useMultiFileAuthState,
 
-} = require("@sampandey001/baileys");
+} = require("@whiskeysockets/baileys");
 
 const fs = require("fs");
 
